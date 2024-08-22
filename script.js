@@ -4,7 +4,7 @@ const CalcAge= document.getElementById("CalcAge");
 const displayAge= document.getElementById("displayAge");
 const Age= document.getElementById("age");
 var today = new Date();
-currDate.innerText=Today's Date is : ${today.toLocaleDateString('en-US')};
+currDate.innerText=`Today's Date is : ${today.toLocaleDateString('en-US')}`;
 
 CalcAge.addEventListener("click",()=>{
     var birthDate = new Date(dateOfBirth.value);
@@ -14,5 +14,5 @@ CalcAge.addEventListener("click",()=>{
         age = age - 1;
     }
 displayAge.style.visibility="visible";
-Age.innerText=You are ${age} years old;
+Age.innerText=`You are ${age} years old`;
 });
